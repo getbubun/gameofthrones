@@ -1,0 +1,55 @@
+<div class="jumbotron" style="background-color: #EEEEEE" >
+    <img class="img-fluid" src="assets/images/wall.png" alt="Image" id="wall">
+
+  <hr class="my-4">
+  <p class="lead text-center" style="font-size: 1.3em; font-weight: 700;color:tomato ;font-style: italic;letter-spacing: -0.250px;
+  text-rendering: optimizeSpeed;" >
+    WHEN YOU PLAY THE GAME OF THRONES, YOU WIN OR YOU DIE, THERE'S NO MIDDLE GROUND.</p>
+
+</div>
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-4 " *ngFor="let data of final | orderBy: 'name' ">
+      <a [routerLink]="['/books', getId(data.url)]">
+        <div class="card text-center" style="width: 18rem;" *ngIf="data.isbn" id="bookCard">
+          <div class="zoom">
+            <img class="card-img-top img-fluid" src="assets/images/book.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{ data.name | uppercase }}</h5>
+              <p class="card-text">{{ data.authors }}</p>
+            </div>
+          </div>
+        </div>
+      </a>
+
+
+      <a [routerLink]="['/houses', getId(data.url)]">
+        <div class="card text-center" style="width: 18rem;" *ngIf="data.region || data.coatOfArms" id="houseCard">
+          <div class="zoom">
+            <img class="card-img-top img-fluid" src="assets/images/house.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{ data.name | uppercase }}</h5>
+              <p class="card-text">{{ data.region }} </p>
+            </div>
+          </div>
+        </div>
+      </a>
+
+
+      <a [routerLink]="['/characters', getId(data.url)]">
+        <div class="card text-center" style="width: 18rem;" *ngIf="data.gender" id="characterCard">
+          <div class="zoom">
+            <img class="card-img-top img-fluid" src="assets/images/char.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title " id="char">{{ data.aliases }}</h5>
+              <p class="card-text">{{ data.gender }}</p>
+
+            </div>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</div>

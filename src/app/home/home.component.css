@@ -1,0 +1,91 @@
+.container{
+    margin-bottom: 4em; 
+}
+
+#id img{
+    background: no-repeat center;
+    background-size: cover;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    margin-top: 0;
+    
+}
+.zoom{
+    position: relative;
+    overflow: hidden;
+}
+.zoom:hover img{
+    transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -webkit-transform: scale(1.08)
+
+}
+.zoom img{
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+
+.col-md-4{
+    margin-top: 5%;
+}
+
+.card{
+    border-radius: 5px;
+    float: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    letter-spacing: -0.195px;
+    text-decoration: none ;
+    text-rendering: optimizeSpeed;
+    color: rgb(41, 47, 56);
+    width: 172.172px;
+    column-rule-color: rgb(41, 47, 56);
+    perspective-origin: 86.0781px 22.5px;
+    transform-origin: 86.0781px 22.5px;
+    user-select: text;
+    border: 0px none rgb(41, 47, 56);
+    list-style: none outside none;
+    margin: 0px 0px 12px;
+    padding: 0px 20px;
+    margin: 0 auto; 
+    float: none;
+    
+
+    }
+
+  a:link{
+      text-decoration: none!important;
+    }
+    
+    
+.jumbotron{
+    margin: 0 auto;
+    padding: 0 auto;
+   
+
+    
+    }
+    
+ 
+
+#bookCard:hover{
+    -webkit-box-shadow:-1px 20px 60px -12px rgb(255, 5, 17);
+    -moz-box-shadow:-1px 20px 60px -12px rgb(255, 5, 17);
+    box-shadow:-1px 20px 60px -12px rgb(255, 5, 17);
+}
+
+#houseCard:hover{
+    -webkit-box-shadow:-1px 20px 60px -12px rgb(123, 255, 0);
+    -moz-box-shadow:-1px 20px 60px -12px rgb(123, 255, 0);
+    box-shadow:-1px 20px 60px -12px rgb(123, 255, 0);
+}
+#characterCard:hover{
+    -webkit-box-shadow:-1px 20px 60px -12px rgb(64, 0, 182);
+    -moz-box-shadow:-1px 20px 60px -12px rgb(64, 0, 182);
+    box-shadow:-1px 20px 60px -12px rgb(64, 0, 182);
+}
+
+
+
